@@ -1,0 +1,71 @@
+p-toolbar {
+    background-color: white;
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+/* primeNg added DYNAMIC component */
+::ng-deep div.p-toolbar.p-component {
+    background-color: white;
+    max-width: 1140px;
+    margin: auto;
+    border-radius: 0;
+    border: none;
+}
+
+#pop-logo {
+    max-width: 50px;
+}
+
+#social-icons-wrapper {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+#social-icons-wrapper>a {
+    padding: 0px 10px;
+}
+
+#social-icons-wrapper a {
+    color: #999494;
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+}
+
+#social-icons-wrapper a:hover {
+    margin-top: -10px;
+    transform: translate(0, -8);
+}
+.navbar-links a {
+    color: black;
+    padding: 0.4em;
+    font-size: 0.85rem;
+    margin-left: 1.2em;
+    font-weight: 400;
+    transition: all ease-in-out 700ms;
+}
+.navbar-links a:nth-child(1) {
+    border-top-left-radius: 12px;
+    /* border-bottom-left-radius: 4px; */
+}
+.navbar-links a:last-child {
+    border-top-right-radius: 12px;
+}
+.navbar-links a:hover {
+    color: white;
+    background-color: black;
+}
+#pop-logo {
+    transition: transform 0.5s linear;
+    cursor: pointer;
+}
+#pop-logo:hover {
+    transform: rotateY(180deg);
+}
+
+
+
