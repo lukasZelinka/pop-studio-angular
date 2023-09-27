@@ -1,0 +1,10 @@
+<p-sidebar
+  [(visible)]="isSidebarOpen"
+  position="left"
+  [showCloseIcon]="false"
+  [dismissible]="false"
+>
+  <div class="container" style="display: flex; justify-content: flex-end">
+    <i class="pi pi-times" (click)="closeSidebar.emit()"></i>
+  </div>
+</p-sidebar>

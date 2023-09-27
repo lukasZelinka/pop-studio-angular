@@ -4,18 +4,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ButtonModule } from 'primeng/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { PrimengModule } from 'primeng';
+// import { PrimengModule } from 'primeng'; // all prime NG components
 import { ToolbarModule } from 'primeng/toolbar';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarModule } from 'primeng/sidebar';
-import { MenuModule } from 'primeng/menu'; 
+// import { MenuModule } from 'primeng/menu';
+import { SidebarComponent } from './sidebar/sidebar.component'; 
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,7 @@ import { MenuModule } from 'primeng/menu';
     BrowserAnimationsModule,
     ToolbarModule,
     SidebarModule,
-    MenuModule
+    // MenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

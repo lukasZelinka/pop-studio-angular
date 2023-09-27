@@ -21,6 +21,15 @@
       <a href="#">VIDEOS</a>
       <a href="#">PHOTOS</a>
       <a href="#">CONTACT</a>
+      <i
+        class="pi pi-bars"
+        (click)="toggleSidebar()"
+        [ngClass]="{ active: isSidebarOpen }"
+      ></i>
     </div>
   </div>
 </p-toolbar>
+<sidebar
+  [isSidebarOpen]="isSidebarOpen"
+  (closeSidebar)="closeSidebar()"
+></sidebar>

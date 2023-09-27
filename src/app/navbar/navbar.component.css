@@ -66,6 +66,13 @@ p-toolbar {
 #pop-logo:hover {
     transform: rotateY(180deg);
 }
-
+i.pi.pi-bars {
+    font-size: 2em;
+    cursor: pointer;
+    transition: all ease-in-out 700ms;
+}
+i.pi.pi-bars.active {
+    transform: rotate(90deg);
+}
 
 
