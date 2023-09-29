@@ -2,3 +2,17 @@ i.pi.pi-times {
    cursor: pointer; 
    margin-right: 1em;
 }
+.sidebar-links {
+   margin: 2em 0 0 1.5em;
+}
+.sidebar-icons {
+   margin-top: 2.3em;
+   color: #999494;
+}
+.sidebar-icons a  {
+   color: #999494;
+   margin-left: 1em;
+}
+.sidebar-icons a i{
+   font-size: 1.5em;
+}
