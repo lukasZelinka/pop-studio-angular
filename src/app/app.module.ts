@@ -8,7 +8,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToolbarModule } from 'primeng/toolbar';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarModule } from 'primeng/sidebar';
-// import { MenuModule } from 'primeng/menu';
 import { SidebarComponent } from './sidebar/sidebar.component'; 
 
 
@@ -26,7 +25,6 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     BrowserAnimationsModule,
     ToolbarModule,
     SidebarModule,
-    // MenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

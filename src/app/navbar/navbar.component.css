@@ -5,7 +5,6 @@ p-toolbar {
     width: 100%;
     top: 0;
 }
-
 /* primeNg added DYNAMIC component */
 ::ng-deep div.p-toolbar.p-component {
     background-color: white;
@@ -14,11 +13,15 @@ p-toolbar {
     border-radius: 0;
     border: none;
 }
-
 #pop-logo {
     max-width: 50px;
 }
-
+@media screen and (max-width: 899.89px) {
+.navbar-social-icons,
+.navbar-links {
+        display: none;
+    }
+}
 #social-icons-wrapper {
     display: inline-flex;
     margin: 0;
@@ -50,7 +53,6 @@ p-toolbar {
 }
 .navbar-links a:nth-child(1) {
     border-top-left-radius: 12px;
-    /* border-bottom-left-radius: 4px; */
 }
 .navbar-links a:last-child {
     border-top-right-radius: 12px;
@@ -74,5 +76,11 @@ i.pi.pi-bars {
 i.pi.pi-bars.active {
     transform: rotate(90deg);
 }
+@media screen and (min-width: 900px) {
+    i.pi.pi-bars {
+        display: none;
+    }
+}
+
 
 

@@ -1,4 +1,4 @@
-import { Component,Input,Output, EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
+import { Component,Input,Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'sidebar',
@@ -11,10 +11,6 @@ export class SidebarComponent {
   
   
 
-  ngOnChanges(changes: SimpleChanges) {
-        if (changes['isSidebarOpen']) {
-            console.log('Zmena vlastnosti myProperty:', changes['isSidebarOpen'].currentValue);
-        }
-    }
+
    
 }
