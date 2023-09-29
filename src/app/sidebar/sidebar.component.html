@@ -4,17 +4,13 @@
   [showCloseIcon]="false"
   [dismissible]="false"
 >
-  <div class="container" style="display: flex; justify-content: flex-end">
+  <div style="display: flex; justify-content: flex-end">
     <i class="pi pi-times" (click)="closeSidebar.emit()"></i>
   </div>
   <div class="card flex justify-content-center sidebar-links">
-    <p-menu [model]="items"></p-menu>
+    <p-menu (click)="closeSidebar.emit()" [model]="socialIcons"></p-menu>
   </div>
-  <div
-    class="container"
-    style="display: flex; justify-content: center"
-    class="sidebar-icons"
-  >
+  <div style="display: flex; justify-content: center" class="sidebar-icons">
     <a href="https://www.instagram.com/pop.studio/">
       <i class="pi pi-instagram"></i>
     </a>

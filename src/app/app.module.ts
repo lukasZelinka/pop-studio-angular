@@ -9,7 +9,11 @@ import { ToolbarModule } from 'primeng/toolbar';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarModule } from 'primeng/sidebar';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { MenuModule } from 'primeng/menu'; 
+import { MenuModule } from 'primeng/menu';
+import { AboutComponent } from './about/about.component';
+import { PhotosComponent } from './photos/photos.component';
+import { VideosComponent } from './videos/videos.component';
+import { ContactComponent } from './contact/contact.component'; 
 
 
 
@@ -17,7 +21,11 @@ import { MenuModule } from 'primeng/menu';
   declarations: [
     AppComponent,
     NavbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    AboutComponent,
+    PhotosComponent,
+    VideosComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-<p-toolbar class="my-custom-toolbar">
+<p-toolbar class="my-custom-toolbar" #pToolbar>
   <div class="p-toolbar-group-start" id="pop-logo">
     <img src="assets/icons/logo192.png" alt="Logo" style="width: 50px" />
   </div>
@@ -17,10 +17,10 @@
   </div>
   <div class="p-toolbar-group-end">
     <div class="navbar-links">
-      <a href="#">ABOUT</a>
-      <a href="#">VIDEOS</a>
-      <a href="#">PHOTOS</a>
-      <a href="#">CONTACT</a>
+      <a routerLink="/">ABOUT</a>
+      <a routerLink="/videos">VIDEOS</a>
+      <a routerLink="/photos">PHOTOS</a>
+      <a routerLink="/contact">CONTACT</a>
     </div>
     <i
       class="pi pi-bars"
