@@ -1,5 +1,6 @@
 :host {
     display: block;   
+    height: 5.625rem;
 }
 p-toolbar {
     background-color: white;
@@ -7,6 +8,7 @@ p-toolbar {
     position: fixed;
     width: 100%;
     top: 0;
+    height: 5.625rem;
 }
 /* primeNg added DYNAMIC component */
 ::ng-deep div.p-toolbar.p-component {

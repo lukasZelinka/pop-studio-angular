@@ -10,16 +10,15 @@ body {
         -moz-osx-font-smoothing: grayscale;
     height: 1000px;
 }
-
 .p-component {
     font-family: 'Work Sans', sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
 }
-
 a {
     text-decoration: none;
 }
-.navbar-space-fixer {
-    height: 100px;
+.main-container {
+    max-width: 1140px;
+    margin: auto;
 }

@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/about', pathMatch: 'full' },
   { path: 'photos', component: PhotosComponent },
   { path: 'videos', component: VideosComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: 'contact', component: ContactComponent }
 ];
 
 @NgModule({
