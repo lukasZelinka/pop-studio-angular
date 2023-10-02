@@ -9,6 +9,8 @@ p-toolbar {
     width: 100%;
     top: 0;
     height: 5.625rem;
+    z-index: 2;
+    opacity: 0.9;
 }
 /* primeNg added DYNAMIC component */
 ::ng-deep div.p-toolbar.p-component {
