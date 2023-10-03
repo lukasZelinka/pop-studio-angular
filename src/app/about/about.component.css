@@ -15,7 +15,7 @@ video:hover {
 #video-wrapper {
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 40rem;
 }
 @media screen and (max-width: 599.98px) {
     video {
@@ -24,6 +24,6 @@ video:hover {
     #video-wrapper {
         position: relative;
         width: 100%;
-        height: 39vh;
+        height: 20rem;
     }
 }

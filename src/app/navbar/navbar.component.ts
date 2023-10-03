@@ -8,10 +8,6 @@ import { Component} from '@angular/core';
 export class NavbarComponent  {
     isSidebarOpen: boolean = false;
 
-
-    constructor() { }
-
-
     toggleSidebar() {
         this.isSidebarOpen = !this.isSidebarOpen;
     }
