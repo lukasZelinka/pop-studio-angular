@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component} from '@angular/core';
 
 
 @Component({
@@ -7,15 +7,5 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent {
-  shouldDisplayVideos = false;
 
-  @HostListener('window:resize', ['$event'])
-
-  ngOnInit() {
-    this.displayMoreVideos()
-  }
-
-  displayMoreVideos(): void {
-    this.shouldDisplayVideos = window.innerWidth <= 600; 
-  }
 }

@@ -13,7 +13,10 @@ import { MenuModule } from 'primeng/menu';
 import { AboutComponent } from './about/about.component';
 import { PhotosComponent } from './photos/photos.component';
 import { VideosComponent } from './videos/videos.component';
-import { ContactComponent } from './contact/contact.component'; 
+import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './footer/footer.component'; 
+import { DividerModule } from 'primeng/divider';
 
 
 
@@ -25,7 +28,9 @@ import { ContactComponent } from './contact/contact.component';
     AboutComponent,
     PhotosComponent,
     VideosComponent,
-    ContactComponent
+    ContactComponent,
+    HomeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +40,7 @@ import { ContactComponent } from './contact/contact.component';
     ToolbarModule,
     SidebarModule,
     MenuModule,
+    DividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

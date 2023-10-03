@@ -1,17 +1,28 @@
-<div class="main-container">
-  <div id="video-wrapper">
-    <video [autoplay]="true" [muted]="true" [loop]="true" [controls]="true">
-      <source src="../../assets/videos/pop-daniela.mp4" type="video/mp4" />
-    </video>
+<section id="about">
+  <div class="main-container">
+    <img src="../../assets/pictures/logo192.png" alt="Pop Studio Logo" />
+    <h1>POP STUDIO</h1>
+    <p>
+      Sme mladé kreatívne štúdio, ktoré vzniklo v roku 2015 a zhruba niekedy
+      odvtedy sa snažíme robiť veci tak ako sa majú. Vieme točiť, fotiť,
+      produkovať aj postprodukovať, managovať, organizovať aj prinášať kreatívne
+      a originálne riešenia. Čo nevieme, to sa naučíme.
+    </p>
+    <p-divider></p-divider>
+    <p>
+      Spolupracujeme s klientmi všetkých veľkostí, vierovyznaní a všetkých
+      budgetov, aj keď aj tu platí, čím viac pásikov tým viac adidas. Naša
+      audiovizuálna kariéra započala v armáde, pokračovala cez dnes už
+      legendárne videoklipy, zahraničné dokumenty a momentálne sa najlepšie
+      cítime v reklame. Veľa cestujeme, radi sa zabávame a to je v našej tvorbe
+      najviac cítiť. Pevne veríme, že dlhodobé pracovné a kamarátske vzťahy
+      tvoria základ dobrej spolupráce a preto sa snažíme dávať do našej práce
+      maximum. Veci berieme s potrebným nadhľadom, stresujeme sa až keď je to
+      ozaj nevyhnutné a k dobru veci.
+    </p>
+    <p-divider></p-divider>
+    <p>
+      Doba sa neustále vyvíja, trendy sa rýchlo menia, ale Pop Studio drží krok.
+    </p>
   </div>
-  <div id="video-wrapper" *ngIf="shouldDisplayVideos">
-    <video [autoplay]="true" [muted]="true" [loop]="true" [controls]="true">
-      <source src="../../assets/videos/pop-daniela.mp4" type="video/mp4" />
-    </video>
-  </div>
-  <div id="video-wrapper" *ngIf="shouldDisplayVideos">
-    <video [autoplay]="true" [muted]="true" [loop]="true" [controls]="true">
-      <source src="../../assets/videos/pop-daniela.mp4" type="video/mp4" />
-    </video>
-  </div>
-</div>
+</section>
