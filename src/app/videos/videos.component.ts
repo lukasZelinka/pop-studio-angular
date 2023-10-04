@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef  } from '@angular/core';
+import { Component, ViewChildren, ElementRef, QueryList   } from '@angular/core';
 import { thumbnails, Thumbnail } from 'src/assets/data/data';
 
 @Component({
@@ -8,16 +8,15 @@ import { thumbnails, Thumbnail } from 'src/assets/data/data';
 })
 export class VideosComponent {
   thumbnails: Thumbnail[] = thumbnails
-  videoType = 'video/mp4';
-   @ViewChild('myVideo') videoPlayer!: ElementRef;
+  @ViewChildren('myVideo') videoPlayers!: QueryList<ElementRef>;
 
 
    constructor() {
     document.addEventListener('fullscreenchange', this.closeFullscreen.bind(this));
   }
 
-   openFullscreen() {
-    const video = this.videoPlayer.nativeElement;
+   openFullscreen(index: number) {
+    const video = this.videoPlayers.toArray()[index].nativeElement;
 
     if (video.requestFullscreen) {
       video.requestFullscreen().then(() => {
@@ -47,11 +46,13 @@ export class VideosComponent {
   }
   
   closeFullscreen() {
-    const video = this.videoPlayer.nativeElement;
-    if ( !document.fullscreenElement )  {
+   this.videoPlayers.forEach(videoPlayer => {
+    const video = videoPlayer.nativeElement;
+    if (!document.fullscreenElement) {
       video.muted = true;
       video.controls = false;
     }
+  });
   }
 }
 
