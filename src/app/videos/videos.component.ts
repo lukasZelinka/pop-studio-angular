@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { thumbnails, Thumbnail } from 'src/assets/data/data';
 
 @Component({
   selector: 'app-videos',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./videos.component.css']
 })
 export class VideosComponent {
-
+  thumbnails: Thumbnail[] = thumbnails
 }

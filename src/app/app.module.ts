@@ -4,7 +4,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ButtonModule } from 'primeng/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { PrimengModule } from 'primeng'; // all prime NG components
 import { ToolbarModule } from 'primeng/toolbar';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarModule } from 'primeng/sidebar';
@@ -17,6 +16,7 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component'; 
 import { DividerModule } from 'primeng/divider';
+import { CardModule } from 'primeng/card';
 
 
 
@@ -40,7 +40,8 @@ import { DividerModule } from 'primeng/divider';
     ToolbarModule,
     SidebarModule,
     MenuModule,
-    DividerModule
+    DividerModule,
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

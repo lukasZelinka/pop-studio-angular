@@ -1,1 +1,22 @@
-<p>videos works!</p>
+<section id="videos">
+  <div class="main-container grid-card-container">
+    <div *ngFor="let thumbnail of thumbnails">
+      <!-- <p-card [style]="{ width: '250px' }" class="grid-item-custom">
+        <ng-template pTemplate="header">
+          <img alt="Card" src="{{ thumbnail.imageUrl }}" />
+        </ng-template>
+        <h4>{{ thumbnail.name }}</h4>
+        <p>{{ thumbnail.desc }}</p>
+        <ng-template pTemplate="footer">
+          <p-button
+            label="View"
+            styleClass="p-button-raised p-button-text p-button-secondary p-button-sm"
+          ></p-button>
+        </ng-template>
+      </p-card> -->
+      <video [muted]="true" [controls]="true">
+        <source src="{{ thumbnail.path }}" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+</section>

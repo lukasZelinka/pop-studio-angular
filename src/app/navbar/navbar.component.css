@@ -13,7 +13,7 @@ p-toolbar {
     opacity: 0.9;
 }
 /* primeNg added DYNAMIC component */
-::ng-deep div.p-toolbar.p-component {
+:host ::ng-deep div.p-toolbar.p-component {
     background-color: white;
     max-width: 1140px;
     margin: auto;
@@ -71,9 +71,6 @@ p-toolbar {
 #pop-logo {
     transition: transform 0.5s linear;
     cursor: pointer;
-}
-#pop-logo:hover {
-    transform: rotateY(180deg);
 }
 i.pi.pi-bars {
     font-size: 2em;
