@@ -1,9 +1,8 @@
 <section id="videos">
   <div class="main-container grid-card-container">
-    <div *ngFor="let thumbnail of thumbnails">
+    <div *ngFor="let thumbnail of thumbnails; let i = index">
       <p-card [style]="{ width: '250px' }" class="grid-item-custom">
         <ng-template pTemplate="header">
-          <!-- <img alt="Card" src="{{ thumbnail.imageUrl }}" /> -->
           <video
             #myVideo
             [controls]="true"
@@ -12,15 +11,16 @@
             [loop]="true"
             [src]="thumbnail.path"
             type="video/mp4"
+            (click)="openFullscreen(i)"
           ></video>
         </ng-template>
         <h4>{{ thumbnail.name }}</h4>
         <p>{{ thumbnail.desc }}</p>
         <ng-template pTemplate="footer">
           <p-button
-            (click)="openFullscreen()"
             label="View"
             styleClass="p-button-raised p-button-text p-button-secondary p-button-sm"
+            (click)="openFullscreen(i)"
           ></p-button>
         </ng-template>
       </p-card>
