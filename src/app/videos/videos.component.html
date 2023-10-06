@@ -1,21 +1,20 @@
 <section id="videos">
   <div class="main-container grid-card-container">
-    <div *ngFor="let thumbnail of thumbnails; let i = index">
+    <div *ngFor="let video of videos; let i = index">
       <p-card [style]="{ width: '250px' }" class="grid-item-custom">
         <ng-template pTemplate="header">
           <video
             #myVideo
-            [controls]="true"
-            [autoplay]="true"
+            [controls]="false"
             [muted]="true"
-            [loop]="true"
-            [src]="thumbnail.path"
+            [src]="video.path"
+            [currentTime]="2"
             type="video/mp4"
             (click)="openFullscreen(i)"
           ></video>
         </ng-template>
-        <h4>{{ thumbnail.name }}</h4>
-        <p>{{ thumbnail.desc }}</p>
+        <h4>{{ video.name }}</h4>
+        <p>{{ video.desc }}</p>
         <ng-template pTemplate="footer">
           <p-button
             label="View"
