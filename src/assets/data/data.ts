@@ -1,6 +1,6 @@
 import { MenuItem } from "primeng/api";
 
-export interface Thumbnail {
+export interface Video {
   id: number;
   name: string;
   desc: string;
@@ -32,7 +32,7 @@ export interface Thumbnail {
         ];
         
 
- export const thumbnails: Thumbnail[] = [
+ export const videos: Video[] = [
     { id:1 , 
       name: "prvy nazov", 
       desc: "prvy desc",

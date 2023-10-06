@@ -1,5 +1,5 @@
 import { Component, ViewChildren, ElementRef, QueryList   } from '@angular/core';
-import { thumbnails, Thumbnail } from 'src/assets/data/data';
+import { videos, Video } from 'src/assets/data/data';
 
 @Component({
   selector: 'app-videos',
@@ -7,7 +7,7 @@ import { thumbnails, Thumbnail } from 'src/assets/data/data';
   styleUrls: ['./videos.component.css']
 })
 export class VideosComponent {
-  thumbnails: Thumbnail[] = thumbnails
+  videos: Video[] = videos
   @ViewChildren('myVideo') videoPlayers!: QueryList<ElementRef>;
 
 
@@ -41,8 +41,7 @@ export class VideosComponent {
     video.currentTime = 0;
     video.play();
     video.muted = false;
-    video.volume = 1.0; 
-    video.loop = false
+    video.volume = 0.3; 
   }
   
   closeFullscreen() {
@@ -50,7 +49,6 @@ export class VideosComponent {
     const video = videoPlayer.nativeElement;
     if (!document.fullscreenElement) {
       video.muted = true;
-      video.controls = false;
     }
   });
   }
