@@ -18,6 +18,9 @@ export class VideosComponent {
    openFullscreen(index: number) {
     const video = this.videoPlayers.toArray()[index].nativeElement;
 
+    video.src = this.videos[index].path;
+    video.load();
+
     if (video.requestFullscreen) {
       video.requestFullscreen().then(() => {
         this.fullScreenSettings(video);
@@ -40,7 +43,6 @@ export class VideosComponent {
   fullScreenSettings(video: HTMLVideoElement) {
     video.currentTime = 0;
     video.play();
-    video.muted = false;
     video.volume = 0.3; 
   }
   
@@ -48,7 +50,7 @@ export class VideosComponent {
    this.videoPlayers.forEach(videoPlayer => {
     const video = videoPlayer.nativeElement;
     if (!document.fullscreenElement) {
-      video.muted = true;
+      video.src = "";
     }
   });
   }

@@ -3,15 +3,8 @@
     <div *ngFor="let video of videos; let i = index">
       <p-card [style]="{ width: '250px' }" class="grid-item-custom">
         <ng-template pTemplate="header">
-          <video
-            #myVideo
-            [controls]="false"
-            [muted]="true"
-            [src]="video.path"
-            [currentTime]="2"
-            type="video/mp4"
-            (click)="openFullscreen(i)"
-          ></video>
+          <img alt="Card" src="{{ video.thumbnail }}" />
+          <video #myVideo [controls]="true" type="video/mp4"></video>
         </ng-template>
         <h4>{{ video.name }}</h4>
         <p>{{ video.desc }}</p>
