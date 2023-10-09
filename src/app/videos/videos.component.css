@@ -1,3 +1,7 @@
+:host ::ng-deep .p-card:hover {
+    transform: scale(1.1);
+    transition: transform 0.7s ease;
+}
 :host ::ng-deep .p-card-body {
     padding: 0.8rem;
 }

@@ -10,7 +10,6 @@ p-toolbar {
     top: 0;
     height: 5.625rem;
     z-index: 2;
-    opacity: 0.9;
 }
 /* primeNg added DYNAMIC component */
 :host ::ng-deep div.p-toolbar.p-component {
@@ -57,12 +56,6 @@ p-toolbar {
     margin-left: 1.2em;
     font-weight: 400;
     transition: all ease-in-out 700ms;
-}
-.navbar-links a:nth-child(1) {
-    border-top-left-radius: 12px;
-}
-.navbar-links a:last-child {
-    border-top-right-radius: 12px;
 }
 .navbar-links a:hover {
     color: white;
