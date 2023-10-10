@@ -1,0 +1,19 @@
+<section id="photo-detail">
+  <div class="main-container">
+    <div *ngIf="photoGallery">
+      <div
+        *ngFor="let imagePath of photoGallery.imagePaths"
+        class="flex-container-center"
+      >
+        <img
+          src="{{ imagePath }}"
+          alt="pop-studio-picture"
+          id="photo-detail-img"
+        />
+      </div>
+    </div>
+    <button id="go-back-button" class="button" type="button" (click)="goBack()">
+      back
+    </button>
+  </div>
+</section>

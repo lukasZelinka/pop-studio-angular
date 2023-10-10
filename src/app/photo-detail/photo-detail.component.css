@@ -1,0 +1,10 @@
+#photo-detail-img {
+    margin: 15px 0;
+    max-width: 100%;
+    height: auto;
+}
+#go-back-button {
+    position: fixed;
+    bottom: 3%;
+    right: 50%;
+}

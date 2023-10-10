@@ -17,6 +17,7 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component'; 
 import { DividerModule } from 'primeng/divider';
 import { CardModule } from 'primeng/card';
+import { PhotoDetailComponent } from './photo-detail/photo-detail.component';
 
 
 
@@ -30,7 +31,8 @@ import { CardModule } from 'primeng/card';
     VideosComponent,
     ContactComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    PhotoDetailComponent
   ],
   imports: [
     BrowserModule,

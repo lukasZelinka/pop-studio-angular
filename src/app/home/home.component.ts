@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { videos, Video } from 'src/assets/data/data';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,7 @@ import { Component, HostListener } from '@angular/core';
 })
 export class HomeComponent {
   shouldDisplayVideos = false;
+  videos: Video[] = videos
 
   @HostListener('window:resize', ['$event'])
 

@@ -1,21 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { photoGalleries, Photogallery } from 'src/assets/data/data';
-
 
 @Component({
   selector: 'app-photos',
   templateUrl: './photos.component.html',
   styleUrls: ['./photos.component.css']
 })
-export class PhotosComponent {
-  photoGalleries:Photogallery[] = photoGalleries
+export class PhotosComponent implements OnInit {
+  photoGalleries: Photogallery[] = [];
   galleryColumns: Photogallery[][] = [[], [], [], []];
 
-  constructor() {
-    for (let i = 0; i < photoGalleries.length; i++) {
-      const columnIndex = i % 4;
-      this.galleryColumns[columnIndex].push(photoGalleries[i]);
-    }
+  ngOnInit() {
+    this.photoGalleries = photoGalleries;
+    this.groupGalleriesIntoColumns();
   }
-  
+
+  private groupGalleriesIntoColumns() {
+    this.photoGalleries.forEach((gallery, index) => {
+      const columnIndex = index % 4;
+      this.galleryColumns[columnIndex].push(gallery);
+    });
+  }
 }

@@ -2,15 +2,12 @@
   <div class="main-container">
     <div class="image-gallery-row">
       <div class="image-gallery-column" *ngFor="let column of galleryColumns">
-        <a
-          href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_grid_responsive"
-        >
-          <img
-            *ngFor="let gallery of column"
-            [src]="gallery.mainImgPath"
-            style="width: 100%"
-          />
-        </a>
+        <img
+          *ngFor="let photoGallery of column"
+          [src]="photoGallery.mainImgPath"
+          style="width: 100%"
+          [routerLink]="['/photos', photoGallery.id]"
+        />
       </div>
     </div>
   </div>
