@@ -49,14 +49,14 @@ export interface Photogallery {
       name: "2", 
       desc: "prvy desc",
       path: "../../assets/videos/2.mp4",
-      thumbnail: "https://www.doucma.sk/images/mustard/illustrations/tutoring.svg"
+      thumbnail: "../../assets/pictures/4.jpg"
     }
     ,
      { id:3 , 
       name: "3", 
       desc: "prvy desc",
       path: "../../assets/videos/3.mp4",
-      thumbnail: "https://www.doucma.sk/images/mustard/illustrations/tutoring.svg"
+      thumbnail: "../../assets/pictures/3.jpg"
 
     }
     ,
@@ -64,7 +64,7 @@ export interface Photogallery {
       name: "4", 
       desc: "prvy desc",
       path: "../../assets/videos/4.mp4",
-      thumbnail: "https://www.doucma.sk/images/mustard/illustrations/tutoring.svg"
+      thumbnail: "../../assets/pictures/4.jpg"
     }
     ,
      { id:5 , 

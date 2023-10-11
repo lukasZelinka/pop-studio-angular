@@ -1,21 +1,13 @@
 <section id="videos">
-  <div class="main-container grid-card-container">
-    <div *ngFor="let video of videos; let i = index">
-      <p-card [style]="{ width: '250px' }" class="grid-item-custom">
-        <ng-template pTemplate="header">
-          <img alt="Card" src="{{ video.thumbnail }}" />
-          <video #myVideo [controls]="true" type="video/mp4"></video>
-        </ng-template>
-        <h4>{{ video.name }}</h4>
-        <p>{{ video.desc }}</p>
-        <ng-template pTemplate="footer">
-          <p-button
-            label="View"
-            styleClass="p-button-raised p-button-text p-button-secondary p-button-sm"
-            (click)="openFullscreen(i)"
-          ></p-button>
-        </ng-template>
-      </p-card>
+  <div class="main-container grid-container">
+    <div *ngFor="let video of videos; let i = index" class="grid-item">
+      <img alt="Card" src="{{ video.thumbnail }}" (click)="openFullscreen(i)" />
+      <video
+        #myVideo
+        [controls]="true"
+        type="video/mp4"
+        (click)="openFullscreen(i)"
+      ></video>
     </div>
   </div>
 </section>

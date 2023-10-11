@@ -35,6 +35,9 @@ a {
 .relative {
     position: relative;
 }
+.absolute {
+    position: absolute;
+}
 .button {
     display: inline-block;
     padding: 6px 16px;
@@ -55,3 +58,4 @@ a {
     transform: scale(0.95);
     box-shadow: none;
 }
+

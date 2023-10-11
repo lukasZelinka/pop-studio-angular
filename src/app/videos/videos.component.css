@@ -1,78 +1,60 @@
-:host ::ng-deep .p-card:hover {
-    transform: scale(1.1);
-    transition: transform 0.7s ease;
+#videos {
+    margin: 1rem 0 5rem 0;
 }
-:host ::ng-deep .p-card-body {
-    padding: 0.8rem;
-}
-:host ::ng-deep .p-card .p-card-content {
-    padding: 0;
-}
-:host ::ng-deep .p-card .p-card-content h4 {
-    margin: 0 0 0.2rem 0;
-}
-:host ::ng-deep .p-card .p-card-content p {
-    margin: 0 0 0.6rem 0;
-    font-size: 75%;
-}
-:host ::ng-deep .p-card-footer {
-    padding-top: 0rem;
-    text-align: center;
-}
-.grid-card-container {
+.grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
     text-align: center;
-    padding: 20px;
-    
+    padding: 1.25rem;  
 }
 @media (max-width: 586px) {
-    .grid-card-container {
-        grid-template-columns: 1fr;
+    .grid-container {
+        grid-template-columns: 3fr;
         justify-items: center;
     }
 }
-.grid-item-custom {
-    padding: 20px;
+@media (min-width: 1100px) {
+    .grid-container {
+        padding-top: 4rem;
+    }
+}
+.grid-item {
+    width: 16rem;
+    height: 9rem;
     box-sizing: border-box;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    border-radius: 6px;
+    transition: all ease-in-out 400ms
     
 }
-:host ::ng-deep .p-card-header {
+.grid-item:hover {
+    transform: scale(1.05);
+}
+img {
     width: 100%;
-    max-height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    border-top-left-radius: 6px;
-    border-top-right-radius:6px;
+    height: auto;
+    object-fit: cover;
+    
 }
-:host ::ng-deep .p-card-header img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-:host ::ng-deep .p-card-header video {
+video {
     width: 0%;
     height: 0%;
 }
-
 video:-webkit-full-screen {
     width: 100%;
     height: 100%;
 }
-
 video:-moz-full-screen {
     width: 100%;
     height: 100%;
 }
-
 video:-ms-fullscreen {
     width: 100%;
     height: 100%;
 }
-
 video:fullscreen {
     width: 100%;
     height: 100%;

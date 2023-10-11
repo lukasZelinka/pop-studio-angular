@@ -10,7 +10,6 @@ export class VideosComponent {
   videos: Video[] = videos
   @ViewChildren('myVideo') videoPlayers!: QueryList<ElementRef>;
 
-
    constructor() {
     document.addEventListener('fullscreenchange', this.closeFullscreen.bind(this));
   }
