@@ -3,8 +3,10 @@
     max-width: 100%;
     height: auto;
 }
+#go-back-button-wrapper {
+    display: flex;
+    justify-content: center;
+}
 #go-back-button {
-    position: fixed;
-    bottom: 3%;
-    right: 50%;
+   margin: 2rem 0;
 }

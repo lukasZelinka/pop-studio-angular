@@ -20,5 +20,4 @@ export class NavbarComponent  {
      closeSidebar() {
         this.isSidebarOpen = false;
     }
-
 }

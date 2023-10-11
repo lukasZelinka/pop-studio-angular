@@ -1,16 +1,18 @@
-<div class="main-container">
-  <!-- main video -->
-  <div id="video-wrapper">
-    <video [autoplay]="true" [muted]="true" [loop]="true" [controls]="true">
-      <source src="../../assets/videos/1.mp4" type="video/mp4" />
-    </video>
-  </div>
-  <!-- other videos visible only on mobile -->
-  <ng-container *ngFor="let video of videos.slice(1, 6); let i = index">
-    <div id="video-wrapper" *ngIf="shouldDisplayVideos">
+<section id="home">
+  <div class="main-container">
+    <!-- main video -->
+    <div id="video-wrapper">
       <video [autoplay]="true" [muted]="true" [loop]="true" [controls]="true">
-        <source [src]="video.path" type="video/mp4" />
+        <source src="../../assets/videos/1.mp4" type="video/mp4" />
       </video>
     </div>
-  </ng-container>
-</div>
+    <!-- other videos visible only on mobile -->
+    <ng-container *ngFor="let video of videos.slice(1, 6); let i = index">
+      <div id="video-wrapper" *ngIf="shouldDisplayVideos">
+        <video [autoplay]="true" [muted]="true" [loop]="true" [controls]="true">
+          <source [src]="video.path" type="video/mp4" />
+        </video>
+      </div>
+    </ng-container>
+  </div>
+</section>
