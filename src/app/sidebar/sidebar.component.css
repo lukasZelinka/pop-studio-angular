@@ -16,3 +16,12 @@ i.pi.pi-times {
 .sidebar-icons a i{
    font-size: 1.5em;
 }
+:host ::ng-deep .p-menu {
+   border: none;
+}
+:host ::ng-deep .p-menu .p-menuitem>.p-menuitem-content .p-menuitem-link {
+   display: flex;
+   justify-content: center;
+   margin: 2em 0;
+   font-size: 130%;
+}

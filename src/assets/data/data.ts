@@ -14,28 +14,23 @@ export interface Photogallery {
   imagePaths: string[];
 }
 
- export const socialIcons: MenuItem[] = [
-  {
-   label: 'About',
-    icon: 'pi pi-fw pi-eye',
-    routerLink: '/about'          
-  },
-  {
-    label: 'Videos',
-    icon: 'pi pi-fw pi-video',
-    routerLink: '/videos'
-  },
-   {
-    label: 'Photos',
-    icon: 'pi pi-fw pi-camera',
-    routerLink: '/photos'
-  },
-  {
-    label: 'Contact',
-    icon: 'pi pi-fw pi-phone',
-    routerLink: '/contact'
-  }
+export interface SocialIcon {
+  url: string;
+  icon: string;
+}
+
+ export const mainLinks: MenuItem[] = [
+  {label: 'ABOUT', routerLink: '/about'},
+  {label: 'VIDEOS', routerLink: '/videos'},
+  {label: 'PHOTOS', routerLink: '/photos'},
+  {label: 'CONTACT', routerLink: '/contact'},
 ];
+
+export const icons: SocialIcon[] = [
+  {url:"https://www.instagram.com/pop.studio/",icon:"pi pi-instagram" },
+  {url:"https://vimeo.com/popstudio",icon:"pi pi-vimeo" },
+  {url:"https://www.facebook.com/popstudiopage",icon:"pi pi-facebook" },
+]
         
  export const videos: Video[] = [
     { id:1 , 

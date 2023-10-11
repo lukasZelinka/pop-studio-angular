@@ -4,23 +4,16 @@
   </div>
   <div class="p-toolbar-group-center navbar-social-icons">
     <div id="social-icons-wrapper">
-      <a href="https://www.instagram.com/pop.studio/">
-        <i class="pi pi-instagram"></i>
-      </a>
-      <a href="https://vimeo.com/popstudio">
-        <i class="pi pi-vimeo"></i>
-      </a>
-      <a href="https://www.facebook.com/popstudiopage">
-        <i class="pi pi-facebook"></i>
+      <a *ngFor="let icon of icons" [href]="icon.url">
+        <i [class]="icon.icon"></i>
       </a>
     </div>
   </div>
   <div class="p-toolbar-group-end">
     <div class="navbar-links">
-      <a routerLink="/about">ABOUT</a>
-      <a routerLink="/videos">VIDEOS</a>
-      <a routerLink="/photos">PHOTOS</a>
-      <a routerLink="/contact">CONTACT</a>
+      <a *ngFor="let link of mainLinks" [routerLink]="link.routerLink">{{
+        link.label
+      }}</a>
     </div>
     <i
       class="pi pi-bars"

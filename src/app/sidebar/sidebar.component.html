@@ -8,17 +8,11 @@
     <i class="pi pi-times" (click)="closeSidebar.emit()"></i>
   </div>
   <div class="card flex justify-content-center sidebar-links">
-    <p-menu (click)="closeSidebar.emit()" [model]="socialIcons"></p-menu>
+    <p-menu (click)="closeSidebar.emit()" [model]="mainLinks"></p-menu>
   </div>
   <div style="display: flex; justify-content: center" class="sidebar-icons">
-    <a href="https://www.instagram.com/pop.studio/">
-      <i class="pi pi-instagram"></i>
-    </a>
-    <a href="https://vimeo.com/popstudio">
-      <i class="pi pi-vimeo"></i>
-    </a>
-    <a href="https://www.facebook.com/popstudiopage">
-      <i class="pi pi-facebook"></i>
+    <a *ngFor="let icon of icons" [href]="icon.url">
+      <i [class]="icon.icon"></i>
     </a>
   </div>
 </p-sidebar>
