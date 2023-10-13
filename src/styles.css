@@ -21,6 +21,9 @@ body {
 a {
     text-decoration: none;
 }
+h2 {
+    text-align: center;
+}
 .main-container {
     max-width: 1140px;
     margin: auto;

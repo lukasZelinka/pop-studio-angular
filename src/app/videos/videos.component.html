@@ -1,4 +1,5 @@
 <section id="videos">
+  <h2>VIDEO</h2>
   <div class="main-container grid-container">
     <div *ngFor="let video of videos; let i = index" class="grid-item">
       <img alt="Card" src="{{ video.thumbnail }}" (click)="openFullscreen(i)" />
