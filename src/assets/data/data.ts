@@ -20,10 +20,10 @@ export interface SocialIcon {
 }
 
  export const mainLinks: MenuItem[] = [
-  {label: 'ABOUT', routerLink: '/about'},
-  {label: 'VIDEOS', routerLink: '/videos'},
-  {label: 'PHOTOS', routerLink: '/photos'},
-  {label: 'CONTACT', routerLink: '/contact'},
+  {label: 'INFO', routerLink: '/about'},
+  {label: 'VIDEO', routerLink: '/videos'},
+  {label: 'FOTKA', routerLink: '/photos'},
+  {label: 'KONTAKT', routerLink: '/contact'},
 ];
 
 export const icons: SocialIcon[] = [
@@ -124,7 +124,7 @@ export const icons: SocialIcon[] = [
   {
   id: 1,
   mainImgPath: "../../assets/pictures/2.jpg",
-  imagePaths: ["../../assets/pictures/2.jpg","../../assets/pictures/2.jpg"]
+  imagePaths: ["../../assets/pictures/1.jpg","../../assets/pictures/2.jpg"]
   },
   {
   id: 2,

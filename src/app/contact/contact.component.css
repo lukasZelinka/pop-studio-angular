@@ -21,6 +21,11 @@
         flex-direction: column;
      }
 }
+@media (max-width: 420px) {
+    .contact-item-flex-row {
+        font-size: 60%;
+    }
+}
 .grey {
     color: #999494;
 }
