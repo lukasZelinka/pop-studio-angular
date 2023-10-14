@@ -17,6 +17,10 @@
     vertical-align: middle;
     width: 100%;
     cursor: pointer;
+    transition: all ease-in-out 400ms
+}
+.image-gallery-column img:hover {
+    transform: scale(1.03);
 }
 @media screen and (max-width: 800px) {
     .image-gallery-column {
