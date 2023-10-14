@@ -61,7 +61,5 @@ h2 {
     transform: scale(0.95);
     box-shadow: none;
 }
-section {
-    min-height: 80vh;
-}
+
 

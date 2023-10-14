@@ -7,6 +7,11 @@
     font-weight: 500;
     font-size: xx-large;
 }
+@media (min-width: 1800px) {
+    #contact-container {
+        min-height: 68vh;
+    }
+}
 #contact-item {
     text-align: center;
     padding: 20px;

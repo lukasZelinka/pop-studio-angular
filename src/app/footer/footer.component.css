@@ -4,4 +4,10 @@
     text-align: center;
     padding: 1rem;
     margin-top: 1rem;
+    font-size: 120%;
+}
+@media (min-width: 1800px) {
+    .footer {
+        margin-top: 9rem;
+    }
 }
