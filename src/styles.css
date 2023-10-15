@@ -61,5 +61,13 @@ h2 {
     transform: scale(0.95);
     box-shadow: none;
 }
+.filler {
+    height: 3rem;
+}
+@media (min-width: 1800px) {
+    .filler {
+        height: 1rem;
+    }
+}
 
 

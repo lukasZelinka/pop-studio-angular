@@ -19,12 +19,5 @@ p {
     line-height: 1.5;
     margin-bottom: 20px;
 } 
-#filler {
-    height: 3rem;
-}
-@media (min-width: 1800px) {
-    #filler {
-       height: 1rem;
-    }
-}
+
 
