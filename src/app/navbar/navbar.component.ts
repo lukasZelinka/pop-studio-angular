@@ -1,6 +1,7 @@
 import { Component} from '@angular/core';
 import { mainLinks, icons, SocialIcon } from 'src/assets/data/data';
-import { MenuItem } from "primeng/api";
+import { MenuItem } from "primeng/api"; 
+import { SidebarService } from '../sevices/sidebar.service';
 
 
 @Component({
@@ -10,14 +11,19 @@ import { MenuItem } from "primeng/api";
 })
 export class NavbarComponent  {
     icons: SocialIcon[] = icons;
-    mainLinks: MenuItem[] = mainLinks;
-    isSidebarOpen: boolean = false;
+    mainLinks: MenuItem[] = mainLinks; 
 
-    toggleSidebar() {
-        this.isSidebarOpen = !this.isSidebarOpen;
-    }
+  constructor(private sidebarService: SidebarService) {}
 
-     closeSidebar() {
-        this.isSidebarOpen = false;
-    }
+  get isSidebarOpen(): boolean {
+    return this.sidebarService.isSidebarOpen;
+  }
+
+  toggleSidebar() {
+    this.sidebarService.toggleSidebar();
+  }
+
+  closeSidebar() {
+    this.sidebarService.closeSidebar();
+  }
 }
