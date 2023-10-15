@@ -1,7 +1,6 @@
-   #home {
+#home {
     padding-top: 2rem;
-   }
-
+}
 video {
     object-fit: cover;
     position: absolute;

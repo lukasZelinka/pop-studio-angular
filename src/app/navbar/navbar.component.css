@@ -11,7 +11,7 @@ p-toolbar {
     height: 5.625rem;
     z-index: 2;
 }
-/* primeNg added DYNAMIC component */
+/* primeNg added DYNAMIC component, ::ng-deep will be deprecated */
 :host ::ng-deep div.p-toolbar.p-component {
     background-color: white;
     max-width: 1140px;
@@ -38,13 +38,11 @@ p-toolbar {
 #social-icons-wrapper>a {
     padding: 0px 10px;
 }
-
 #social-icons-wrapper a {
     color: #999494;
     cursor: pointer;
     transition: all ease-in-out 300ms;
 }
-
 #social-icons-wrapper a:hover {
     margin-top: -10px;
     transform: translate(0, -8);

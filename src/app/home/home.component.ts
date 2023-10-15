@@ -10,12 +10,11 @@ export class HomeComponent {
   shouldDisplayVideos = false;
   videos: Video[] = videos
 
-  @HostListener('window:resize', ['$event'])
-
   ngOnInit() {
     this.displayMoreVideos()
   }
-
+  
+  @HostListener('window:resize', ['$event'])
   displayMoreVideos(): void {
     this.shouldDisplayVideos = window.innerWidth <= 600; 
   }

@@ -7,13 +7,11 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
   dividerLayout: 'horizontal' | 'vertical' = 'vertical';
-
-  constructor() {}
-
+  
   ngOnInit(): void {
     this.onResize(); 
   }
-
+  
   @HostListener('window:resize', ['$event'])
   onResize(): void {
     this.dividerLayout = window.innerWidth <= 800 ? 'horizontal' : 'vertical';

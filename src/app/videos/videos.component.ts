@@ -49,10 +49,10 @@ export class VideosComponent {
    this.videoPlayers.forEach(videoPlayer => {
     const video = videoPlayer.nativeElement;
     if (!document.fullscreenElement) {
-      video.src = "";
+     video.src = "";
     }
   });
-  }
+ }
 }
 
 
