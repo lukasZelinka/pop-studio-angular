@@ -1,7 +1,7 @@
 import { Component} from '@angular/core';
 import { mainLinks, icons, SocialIcon } from 'src/assets/data/data';
 import { MenuItem } from "primeng/api"; 
-import { SidebarService } from '../sevices/sidebar.service';
+import { SidebarService } from '../services/sidebar.service';
 
 
 @Component({
