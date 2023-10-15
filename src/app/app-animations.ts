@@ -18,10 +18,10 @@ export const opacityAnimation = trigger('routeAnimations', [
     query(':leave', animateChild(), { optional: true }),
     group([
       query(':leave', [
-        animate('500ms linear', style({ opacity: 0 }))
+        animate('100ms linear', style({ opacity: 0 }))
       ], { optional: true }),
       query(':enter', [
-        animate('500ms linear', style({ opacity: 1 }))
+        animate('600ms linear', style({ opacity: 1 }))
       ], { optional: true }),
       query('@*', animateChild(), { optional: true })
     ]),
