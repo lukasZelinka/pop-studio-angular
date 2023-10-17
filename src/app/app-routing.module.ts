@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes, provideRouter } from '@angular/router';
-import { ApplicationConfig } from '@angular/core';
+import { RouterModule, Routes, PreloadAllModules} from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { PhotosComponent } from './photos/photos.component';
 import { VideosComponent } from './videos/videos.component';
@@ -18,15 +17,10 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent, data: { animation: 'contactPage' } }
 ];
 
-export const appConfig: ApplicationConfig = {
-  providers: [
-    provideRouter(routes)
-  ]
-};
-
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
     scrollPositionRestoration: 'enabled',
+    preloadingStrategy: PreloadAllModules  
   })],
   exports: [RouterModule]
 })
