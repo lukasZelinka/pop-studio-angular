@@ -37,21 +37,21 @@ export const icons: SocialIcon[] = [
       name: "prvy nazov", 
       desc: "prvy desc",
       path: "../../assets/videos/1.mp4",
-      thumbnail: "https://dam.nmhmedia.sk/image/725a6f00-10b7-45bb-9f79-bad7c51758a9_daniela-hantuchova-nema-s-nahotou-problem-a-tento-zaber-to-dokazuje.jpg/960/540"
+      thumbnail: "../../assets/pictures/thumbnails/1.png"
     }
     ,
     { id:2 , 
       name: "2", 
       desc: "prvy desc",
       path: "../../assets/videos/2.mp4",
-      thumbnail: "../../assets/pictures/4.jpg"
+      thumbnail: "../../assets/pictures/thumbnails/2.png"
     }
     ,
      { id:3 , 
       name: "3", 
       desc: "prvy desc",
       path: "../../assets/videos/3.mp4",
-      thumbnail: "../../assets/pictures/3.jpg"
+      thumbnail: "../../assets/pictures/thumbnails/3.png"
 
     }
     ,
@@ -59,63 +59,63 @@ export const icons: SocialIcon[] = [
       name: "4", 
       desc: "prvy desc",
       path: "../../assets/videos/4.mp4",
-      thumbnail: "../../assets/pictures/4.jpg"
+      thumbnail: "../../assets/pictures/thumbnails/4.png"
     }
     ,
      { id:5 , 
       name: "5", 
       desc: "prvy desc",
       path: "../../assets/videos/5.mp4",
-      thumbnail: "https://www.doucma.sk/images/mustard/illustrations/tutoring.svg"
+      thumbnail: "../../assets/pictures/thumbnails/5.png"
     }
     ,
      { id:6 , 
       name: "6", 
       desc: "prvy desc",
       path: "../../assets/videos/6.mp4",
-      thumbnail: "https://www.doucma.sk/images/mustard/illustrations/tutoring.svg"
+      thumbnail: "../../assets/pictures/thumbnails/6.png"
     }
     ,
      { id:7 , 
       name: "7", 
       desc: "prvy desc",
       path: "../../assets/videos/7.mp4",
-      thumbnail: "https://www.doucma.sk/images/mustard/illustrations/tutoring.svg"
+      thumbnail: "../../assets/pictures/thumbnails/7.png"
     }
     ,
      { id:8 , 
       name: "8", 
       desc: "prvy desc",
       path: "../../assets/videos/8.mp4",
-      thumbnail: "https://www.doucma.sk/images/mustard/illustrations/tutoring.svg"
+      thumbnail: "../../assets/pictures/thumbnails/8.png"
     }
     ,
      { id:9 , 
       name: "9", 
       desc: "prvy desc",
       path: "../../assets/videos/9.mp4",
-      thumbnail: "https://www.doucma.sk/images/mustard/illustrations/tutoring.svg"
+      thumbnail: "../../assets/pictures/thumbnails/9.png"
     }
     ,
      { id:10 , 
       name: "10", 
       desc: "prvy desc",
       path: "../../assets/videos/10.mp4",
-      thumbnail: "https://www.doucma.sk/images/mustard/illustrations/tutoring.svg"
+      thumbnail: "../../assets/pictures/thumbnails/10.png"
     }
     ,
      { id:11 , 
       name: "11", 
       desc: "prvy desc",
       path: "../../assets/videos/11.mp4",
-      thumbnail: "https://www.doucma.sk/images/mustard/illustrations/tutoring.svg"
+      thumbnail: "../../assets/pictures/thumbnails/11.png"
     }
     ,
      { id:12 , 
       name: "12", 
       desc: "prvy desc",
       path: "../../assets/videos/12.mp4",
-      thumbnail: "https://www.doucma.sk/images/mustard/illustrations/tutoring.svg"
+      thumbnail: "../../assets/pictures/thumbnails/12.png"
     }
     
  ];
