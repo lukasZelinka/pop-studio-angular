@@ -16,7 +16,7 @@ export class FooterComponent implements OnInit {
   footerDealyloading() {
      setTimeout(() => {
       this.footerLoaded = true;
-    }, 300); 
+    }, 600); 
   }
 }
 

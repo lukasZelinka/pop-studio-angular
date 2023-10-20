@@ -8,13 +8,13 @@ import { HomeComponent } from './home/home.component';
 import { PhotoDetailComponent } from './photo-detail/photo-detail.component';
 
 const routes: Routes = [
-  { path: 'about', component: AboutComponent, data: { animation: 'aboutPage' }},
   { path: 'home', component: HomeComponent, data: { animation: 'homePage' } },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'about', component: AboutComponent, data: { animation: 'aboutPage' }},
   { path: 'photos', component: PhotosComponent, data: { animation: 'photosPage' } },
-  { path: 'photos/:photoId', component: PhotoDetailComponent, data: { animation: 'photoPage' } },
   { path: 'videos', component: VideosComponent, data: { animation: 'videoPage' } },
-  { path: 'contact', component: ContactComponent, data: { animation: 'contactPage' } }
+  { path: 'contact', component: ContactComponent, data: { animation: 'contactPage' } },
+  { path: 'photos/:photoId', component: PhotoDetailComponent, data: { animation: 'photoPage' } },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 
 @NgModule({
