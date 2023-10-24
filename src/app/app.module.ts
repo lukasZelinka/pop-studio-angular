@@ -16,6 +16,7 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component'; 
 import { DividerModule } from 'primeng/divider';
 import { PhotoDetailComponent } from './photo-detail/photo-detail.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 
@@ -30,7 +31,8 @@ import { PhotoDetailComponent } from './photo-detail/photo-detail.component';
     ContactComponent,
     HomeComponent,
     FooterComponent,
-    PhotoDetailComponent
+    PhotoDetailComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

@@ -55,7 +55,8 @@ p-toolbar {
     font-weight: 400;
     transition: all ease-in-out 700ms;
 }
-.navbar-links a:hover {
+.navbar-links a:hover,
+.navbar-links .activebutton {
     color: white;
     background-color: black;
 }

@@ -11,9 +11,13 @@
   </div>
   <div class="p-toolbar-group-end">
     <div class="navbar-links">
-      <a *ngFor="let link of mainLinks" [routerLink]="link.routerLink">{{
-        link.label
-      }}</a>
+      <a
+        *ngFor="let link of mainLinks"
+        [routerLink]="link.routerLink"
+        routerLinkActive="activebutton"
+        ariaCurrentWhenActive="page"
+        >{{ link.label }}</a
+      >
     </div>
     <i
       class="pi pi-bars"

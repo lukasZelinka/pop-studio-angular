@@ -6,6 +6,7 @@ import { VideosComponent } from './videos/videos.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { PhotoDetailComponent } from './photo-detail/photo-detail.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent, data: { animation: 'homePage' } },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent, data: { animation: 'contactPage' } },
   { path: 'photos/:photoId', component: PhotoDetailComponent, data: { animation: 'photoPage' } },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
+  {path: '**', component: PageNotFoundComponent, data: { animation: 'notFoundPage' }}
 ];
 
 @NgModule({
