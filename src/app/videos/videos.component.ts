@@ -1,5 +1,6 @@
 import { Component, ViewChildren, ElementRef, QueryList   } from '@angular/core';
 import { videos, Video } from 'src/assets/data/data';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-videos',
@@ -10,8 +11,16 @@ export class VideosComponent {
   videos: Video[] = videos
   @ViewChildren('myVideo') videoPlayers!: QueryList<ElementRef>;
 
-   constructor() {
+   constructor(private route: ActivatedRoute) {
     document.addEventListener('fullscreenchange', this.closeFullscreen.bind(this));
+  }
+
+    ngOnInit() {
+    this.route.data
+      .subscribe(data => {
+        const videos: Video[] = data['videos'];   
+        this.videos = videos;
+      });
   }
 
    openFullscreen(index: number) {
