@@ -4,7 +4,7 @@ import {EMPTY, of} from 'rxjs';
 import {mergeMap} from 'rxjs/operators';
 
 import { Video } from '../assets/data/data';
-import { DataService } from './services/data-service';
+import { DataService } from './services/data.service';
 
 export const videosResolver: ResolveFn<Video[]> = () => {
   const router = inject(Router);
