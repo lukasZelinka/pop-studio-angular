@@ -10,12 +10,12 @@ export class PhotosComponent implements OnInit {
   photoGalleries: Photogallery[] = [];
   galleryColumns: Photogallery[][] = [[], [], [], []];
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.photoGalleries = photoGalleries;
     this.groupGalleriesIntoColumns();
   }
 
-  private groupGalleriesIntoColumns() {
+  private groupGalleriesIntoColumns(): void {
     this.photoGalleries.forEach((gallery, index) => {
       const columnIndex = index % 4;
       this.galleryColumns[columnIndex].push(gallery);

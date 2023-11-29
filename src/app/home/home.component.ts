@@ -7,7 +7,7 @@ import { videos, Video } from 'src/assets/data/data';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  shouldDisplayVideos = false;
+  shouldDisplayVideos: boolean = false;
   videos: Video[] = videos
 
   ngOnInit() {

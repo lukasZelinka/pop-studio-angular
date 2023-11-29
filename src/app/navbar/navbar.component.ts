@@ -19,11 +19,11 @@ export class NavbarComponent  {
     return this.sidebarService.isSidebarOpen;
   }
 
-  toggleSidebar() {
+  toggleSidebar(): void {
     this.sidebarService.toggleSidebar();
   }
 
-  closeSidebar() {
+  closeSidebar(): void {
     this.sidebarService.closeSidebar();
   }
 }

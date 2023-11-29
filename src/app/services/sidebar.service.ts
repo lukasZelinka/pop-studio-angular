@@ -6,11 +6,11 @@ import { Injectable } from '@angular/core';
 export class SidebarService {
   isSidebarOpen: boolean = false;
 
-  toggleSidebar() {
+  toggleSidebar(): void{
     this.isSidebarOpen = !this.isSidebarOpen;
   }
 
-  closeSidebar() {
+  closeSidebar(): void {
     this.isSidebarOpen = false;
   }
 }

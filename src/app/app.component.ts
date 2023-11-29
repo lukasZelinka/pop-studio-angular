@@ -13,7 +13,7 @@ import { opacityAnimation } from './app-animations';
 export class AppComponent  {
   constructor(private contexts: ChildrenOutletContexts) {}
 
-getRouteAnimationData() {
+getRouteAnimationData(): any {
   return this.contexts.getContext('primary')?.route?.snapshot?.data?.['animation'];
 }
 }

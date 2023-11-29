@@ -13,14 +13,11 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent, data: { animation: 'homePage' } },
   { path: 'about', component: AboutComponent, data: { animation: 'aboutPage' }},
   { path: 'photos', component: PhotosComponent, data: { animation: 'photosPage' } },
-  { path: 'videos', component: VideosComponent,   resolve: {
-              videos: videosResolver
-            },
-             data: { animation: 'videoPage' } },
+  { path: 'videos', component: VideosComponent, resolve: { videos: videosResolver }, data: { animation: 'videoPage' } },
   { path: 'contact', component: ContactComponent, data: { animation: 'contactPage' } },
   { path: 'photos/:photoId', component: PhotoDetailComponent, data: { animation: 'photoPage' } },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  {path: '**', component: PageNotFoundComponent, data: { animation: 'notFoundPage' }}
+  { path: '**', component: PageNotFoundComponent, data: { animation: 'notFoundPage' }}
 ];
 
 @NgModule({

@@ -15,7 +15,7 @@ export class VideosComponent {
     document.addEventListener('fullscreenchange', this.closeFullscreen.bind(this));
   }
 
-    ngOnInit() {
+    ngOnInit(): void {
     this.route.data
       .subscribe(data => {
         const videos: Video[] = data['videos'];   
@@ -23,7 +23,7 @@ export class VideosComponent {
       });
   }
 
-   openFullscreen(index: number) {
+   openFullscreen(index: number): void {
     const video = this.videoPlayers.toArray()[index].nativeElement;
 
     video.src = this.videos[index].path;
@@ -48,13 +48,13 @@ export class VideosComponent {
     }
   }
 
-  fullScreenSettings(video: HTMLVideoElement) {
+  fullScreenSettings(video: HTMLVideoElement): void {
     video.currentTime = 0;
     video.play();
     video.volume = 0.3; 
   }
   
-  closeFullscreen() {
+  closeFullscreen(): void {
    this.videoPlayers.forEach(videoPlayer => {
     const video = videoPlayer.nativeElement;
     if (!document.fullscreenElement) {
